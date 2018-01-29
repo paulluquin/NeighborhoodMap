@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Neighborhood Map</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="static/styles/styles.css" rel="stylesheet">
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+
+  </head>
+
+  <body>
+
+
+
+    <div id="info">
+      <h1>Neighborhood Project</h1>
+
+      <h2>Restaurants in Geneva</h2>
+      <p>
+          Food Type Selection:
+          <select ></select>
+      </p>
+
+      <div >
+        <ul data-bind="foreach: listOfRestaurants">
+          <li data-bind="text: name"></li>
+        </ul>
+      </div>
+
+
+    </div>
+
+    <div id="map">
+        <div id="floating-pannel">jj</div>
+
+    </div>
+
+
+    <!-- Call Knockout -->
+    <script src="static/js/knockout-3.4.2.js" type="text/javascript"></script>
+    <!-- Call app.js -->
+    <script src="static/js/app.js" type="text/javascript"></script>
+    <!-- Call gmap.js where all the google map code is located -->
+    <script src="static/js/gmaps.js" type="text/javascript"></script>
+    <!-- Call foursquares.js where all the foursquare code is located -->
+    <script src="static/js/foursquares.js" type="text/javascript"></script>
+
+     <!-- CALL google api to allow loading of maps, etc. -->
+    <script async defer
+     src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyATxkhK4Oy1NIPLgJsf4jY-IKXv97EIZqc&callback=initMap">
+    </script>
+  </body>
+</html>

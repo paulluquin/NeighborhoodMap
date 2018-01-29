@@ -1,0 +1,45 @@
+html {
+  height:100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  height:100%;
+}
+
+h1 {
+  column-fill: red;
+  font-size: 30px;
+}
+
+#floating-pannel {
+  position: absolute;
+  top: 30px;
+  right: 35%;
+  height: 100px;
+  width: 200px;
+  background-color: white;
+  border: 5px;
+  text-align: center;
+  z-index: 10;
+
+}
+
+#submit.hover {
+  color: red;
+}
+
+#info {
+  min-width: 300px;
+  width: 20%;
+  height: 400px;
+}
+
+#map {
+  min-width: 400px;
+  width: 70%;
+  height: 100%;
+}
