@@ -11,8 +11,6 @@
 
   <body>
 
-
-
     <div id="info">
       <h1>Neighborhood Project</h1>
 
@@ -22,13 +20,13 @@
           <select ></select>
       </p>
 
-      <div >
+      <div>
         <ul data-bind="foreach: listOfRestaurants">
-          <li data-bind="text: name"></li>
+          <li>
+            <a data-bind="text: name, attr: {href: link}">__text__</a>
+          </li>
         </ul>
       </div>
-
-
     </div>
 
     <div id="map">

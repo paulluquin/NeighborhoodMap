@@ -1,11 +1,28 @@
 var restaurantList = [
   {
-    name : "restaurant 1 waiting to load....",
-    link : ""
+    name : "Da Paolo ....",
+    link : "http://www.dapaolo.ch",
+    type : "italian"
   },
   {
-    name : "restaurant 2 waiting to load....",
-    link : ""
+    name : "Inglewood ....",
+    link : "http://inglewood.ch",
+    type : "italian"
+  },
+  {
+    name : "Tartare & Co. ....",
+    link : "http://tartareandco.ch",
+    type : "french"
+  },
+  {
+    name : "Brasserie Lipp ....",
+    link : "http://www.brasserie-lipp.com",
+    type : "american"
+  },
+  {
+    name : "Luigia ....",
+    link : "http://luigia.ch",
+    type : "chineese"
   }
 ];
 console.log("restaurant list created");
@@ -13,6 +30,7 @@ console.log("restaurant list created");
 
 var Restaurant = function(data) {
    this.name = ko.observable(data.name);
+   this.link = ko.observable(data.link);
 }
 
 

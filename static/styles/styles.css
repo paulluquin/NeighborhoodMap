@@ -15,6 +15,10 @@ h1 {
   font-size: 30px;
 }
 
+li {
+  font-size: 15px;
+}
+
 #floating-pannel {
   position: absolute;
   top: 30px;

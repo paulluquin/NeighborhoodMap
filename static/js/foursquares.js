@@ -40,9 +40,11 @@ const request = async (findLocation) => {
             data.response.groups[0].items[i].venue.location.lng);
 
           restaurantList.push({name: data.response.groups[0].items[i].venue.name});
-          ViewModel.listOfRestaurants.push(new Restaurant(data.response.groups[0].items[i].venue.name));
+          //ViewModel.listOfRestaurants.push(new Restaurant(data.response.groups[0].items[i].venue.name));
           setMarker(locationSinglePoint, i, data.response.groups[0].items[i].venue.name);
-
+          // console.log(data.response.groups[0].items[i].venue);
+          // console.log(data.response.groups[0].items[i].venue.name);
+          // console.log(data.response.groups[0].items[i].venue.url);
         }
 
         //console.log(restaurantList[0])
