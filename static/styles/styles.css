@@ -14,7 +14,11 @@ h1 {
   column-fill: red;
   font-size: 30px;
 }
-
+ul {
+  list-style: none;
+  max-height: 180px;
+  overflow: auto;
+}
 li {
   font-size: 15px;
 }
@@ -46,4 +50,24 @@ li {
   min-width: 400px;
   width: 70%;
   height: 100%;
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn-group button {
+    background-color: #3399ff;
+    border: 1px;
+    color: white;
+    padding: 10px 24px;
+    cursor: pointer;
+    width: 70px;
+    display: block;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #0066cc;
 }

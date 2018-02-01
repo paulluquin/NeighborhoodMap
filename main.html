@@ -14,11 +14,18 @@
     <div id="info">
       <h1>Neighborhood Project</h1>
 
-      <h2>Restaurants in Geneva</h2>
-      <p>
-          Food Type Selection:
-          <select ></select>
-      </p>
+      <h2>Welcome to Geneva!</h2>
+
+      <h3>Select the type of places to visit:</h3>
+
+      <div class="btn-group">
+
+          <button onClick="typeOfVenue('food')">Food</button>
+          <button onClick="typeOfVenue('drinks')">Drinks</button>
+          <button onClick="typeOfVenue('arts')">Arts</button>
+          <button onClick="typeOfVenue('sights')">Sights</button>
+
+      </div>
 
       <div>
         <ul data-bind="foreach: listOfRestaurants">
@@ -34,15 +41,14 @@
 
     </div>
 
-
     <!-- Call Knockout -->
     <script src="static/js/knockout-3.4.2.js" type="text/javascript"></script>
     <!-- Call app.js -->
     <script src="static/js/app.js" type="text/javascript"></script>
-    <!-- Call gmap.js where all the google map code is located -->
-    <script src="static/js/gmaps.js" type="text/javascript"></script>
     <!-- Call foursquares.js where all the foursquare code is located -->
     <script src="static/js/foursquares.js" type="text/javascript"></script>
+    <!-- Call gmap.js where all the google map code is located -->
+    <script src="static/js/gmaps.js" type="text/javascript"></script>
 
      <!-- CALL google api to allow loading of maps, etc. -->
     <script async defer
